@@ -1,0 +1,91 @@
+:root {
+    --primary-color: rgba(75, 2, 75);
+    --secondary-color: rgb(15, 85, 78);
+    --tertiary-color: rgb(170, 81, 122);
+    --neutral: rgb(250, 245, 230);
+}
+
+/* remove default browser styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* default text/background color / font */
+body {
+    color: var(--primary-color);
+    background-image: radial-gradient(ellipse,  rgb(237, 221, 241), var(--neutral));
+    font-family: Times, "Times New Roman", Georgia, serif;
+}
+
+/*background sphere*/
+.circle {
+    margin: 5rem 5rem;
+    height: 30rem;
+    width: 30rem;
+    background: radial-gradient(circle, var(--neutral) 9%, var(--secondary-color) 90%);
+    border-radius: 50%;
+    position: fixed;
+    z-index: -1;
+    filter: grayscale(20%);
+}
+
+/* header and intro blurb */
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:center;
+    background: none;
+    margin: 100px 0px 100px 20px;
+    padding: 100px 0;
+}
+header h1{
+    font-style: italic;
+    font-size: 10rem;
+    flex: 0 0.5 10rem;
+    display: inline-block;
+}
+
+.intro{
+    flex: 0 0 400px;
+    flex-wrap: wrap;
+    display: inline-block;
+}
+
+/* floating nav links */
+.nav-parent {
+    margin: 150px 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-pages {
+    border: 3px dotted var(--tertiary-color);
+    background: radial-gradient(circle, var(--primary-color) 9%, var(--tertiary-color) 90%);
+    border-radius: 15px;
+    box-shadow: 3px 3px 3px .7;
+    width: 40px;
+    height: 200px;
+    font-style:oblique;
+    text-align: center;
+    font-size: 24px;
+}
+.nav-pages:hover {
+    background: radial-gradient(circle, rgb(241, 91, 5) 9%, var(--primary-color) 90%);
+}
+a {
+    text-decoration: none; 
+    color: var(--neutral);
+}
+a:hover{
+    transform: skew(-10deg);
+}
+
+    /* START ABOUT PAGE */
+    /* header */
+.about-head {
+
+}
