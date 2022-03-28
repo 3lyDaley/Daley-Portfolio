@@ -1,0 +1,35 @@
+.work-body {
+    color: rgb(219, 202, 154);
+    background-image: radial-gradient(ellipse,  rgb(62, 2, 77), var(--secondary-color));
+    font-family: Times, "Times New Roman", Georgia, serif;
+}
+.AC-body {
+    color: rgb(219, 202, 154);
+    background-image: radial-gradient(ellipse, var(--secondary-color), rgb(62, 2, 77));
+    font-family: Times, "Times New Roman", Georgia, serif;
+}
+/*background sphere*/
+.circle {
+    background: radial-gradient(circle, var(--secondary-color) 9%, var(--primary-color) 90%);
+}
+.secondary-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 20px 0 20px;
+    padding: 80px 0;
+}
+.secondary-header a {
+    color:rgb(219, 202, 154);
+    font-style: oblique;
+    font-size: 36px;
+}
+.secondary-header a:hover{
+    transform: rotateY(180deg);
+}
+header img {
+    height: 280px;
+    width: 500px;
+    flex: 0 0.5 500px;
+    display: inline-block;
+}
