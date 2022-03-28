@@ -1,8 +1,10 @@
+/* color scheme for 'work' page */
 .work-body {
     color: rgb(219, 202, 154);
     background-image: radial-gradient(ellipse,  rgb(62, 2, 77), var(--secondary-color));
     font-family: Times, "Times New Roman", Georgia, serif;
 }
+/* color scheme for 'about' and 'contact' (reversed gradient) */
 .AC-body {
     color: rgb(219, 202, 154);
     background-image: radial-gradient(ellipse, var(--secondary-color), rgb(62, 2, 77));
@@ -12,6 +14,7 @@
 .circle {
     background: radial-gradient(circle, var(--secondary-color) 9%, var(--primary-color) 90%);
 }
+/* container for page's title and 'go back' nav link */
 .secondary-header {
     display: flex;
     justify-content: space-between;
@@ -19,6 +22,14 @@
     margin: 30px 20px 0 20px;
     padding: 80px 0;
 }
+/* header title */
+header img {
+    height: 280px;
+    width: 100%;
+    flex: 0 0.5 500px;
+    display: inline-block;
+}
+/* 'go back' navigation link styling/ hover animation */
 .secondary-header a {
     color:rgb(219, 202, 154);
     font-style: oblique;
@@ -26,10 +37,4 @@
 }
 .secondary-header a:hover{
     transform: rotateY(180deg);
-}
-header img {
-    height: 280px;
-    width: 100%;
-    flex: 0 0.5 500px;
-    display: inline-block;
 }

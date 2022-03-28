@@ -104,7 +104,7 @@ a {
 
 /* root nav link directed pages layout */
 /* header */
-.secondary-headers {
+.secondary-header {
     font-size: 5rem;
     justify-content: flex-start;
     align-content: flex-start;
@@ -137,8 +137,7 @@ a {
 }
 /* description of websites */
 .module-text {
-    width: 800px;
-    flex: 1 1 300px;
+    flex: 0 0.5 500px;
     display: inline-block;
     margin: 10px;
     font-size: 30px;
@@ -169,7 +168,7 @@ a img {
 }
 
 /* media queries for smaller screens */
-@media screen and (max-width: 1470px) {
+@media screen and (max-width: 980px) {
     /* adjusting modules on 'about' and 'work' pages into columns */
     .secondary-modules {
         align-items: center;
@@ -181,8 +180,12 @@ a img {
         justify-content: center;
         align-items: center;
     }
-    .secondary-header{
+    header img{
+        flex: 0 0 100px;
+        flex-direction: column;
         justify-content: center;
+        display: block;
+        text-align: center;
     }
     /* styling 'work' 'about' page's column */
     .secondary-modules h2{
@@ -198,8 +201,9 @@ a img {
     #selfie{
         width: 60%;
     }
-    .secondary-modules p {
-        width: 80%;
+    .module-text {
+        width: 60%;
+        flex: 0 0 100px;
         text-align:center;
         font-family: Georgia, 'Times New Roman', Times, serif;
         line-height: 1;
@@ -219,10 +223,10 @@ a img {
 
 @media screen and (max-width: 768px) {
     /* centering homepage 'Ely Daley' graphic */
-        .head-img{
-            width: 100%;
-            text-align: center;
-        }
+    .head-img{
+        width: 100%;
+        text-align: center;
+    }
     /* remove intro from homepage, was too awkward */
     .intro {
         display:none;
