@@ -29,7 +29,7 @@
 }
 header img {
     height: 280px;
-    width: 500px;
+    width: 100%;
     flex: 0 0.5 500px;
     display: inline-block;
 }

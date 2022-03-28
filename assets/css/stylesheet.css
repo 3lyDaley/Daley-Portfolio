@@ -34,26 +34,28 @@ body {
 }
 
 /* header and intro blurb */
+/* parent of name/intro section + navigation links */
 .front-page {
     display: flex;
     flex-direction: column;
 }
+/*parent for name (img) and .intro */
 header{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items:center;
     background: none;
-    margin: 30px 0 200px 20px;
     padding: 80px 0;
 }
+/* 'Ely Daley' graphic */
 header img {
     height: 400px;
-    width: 500px;
+    width: 100%;
     flex: 0 0.5 500px;
     display: inline-block;
 }
-
+/* block of text on homepage only */
 .intro{
     flex: 0 0 400px;
     flex-wrap: wrap;
@@ -64,7 +66,7 @@ header img {
     padding: 0 40px 0 0;
 }
 
-/* position and look of 'about' page image */
+/* position and look of 'about' page image only */
 #selfie {
     width: 400px;
     display: inline-block;
@@ -73,39 +75,35 @@ header img {
 }
 
 /* floating nav links */
+/* parent of homepage links */
 .nav-parent {
     margin: 80px 50px;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
 }
 
-.nav-pages {
-    border: none;
-    flex: 0 .5 70px;
-    font-style:oblique;
+/*position anchors*/
+a {
+    text-decoration: none; 
+    color: var(--primary-color);
     text-align: center;
-    font-size: 60px;
 }
-.nav-pages p {
-    display: none;
-}
+/* sizing link graphics */
 .nav-pages img {
     height: 100px;
     width: 100px;
     flex: 0 0 100px;
 }
+/* turn backwards on hover */
 .nav-pages img:hover {
     transform:rotateX(180deg);
 }
-a {
-    text-decoration: none; 
-    color: var(--primary-color);
-}
 
-    /* root navigation pages layout */
-    /* header */
+/* root nav link directed pages layout */
+/* header */
 .secondary-headers {
     font-size: 5rem;
     justify-content: flex-start;
@@ -113,18 +111,53 @@ a {
     margin: 25px;
 }
 
-    /* Work display modules */
+/* Work display modules */
+/* Parent Module for work page*/
 .secondary-modules {
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
+    justify-content: center;
 }
-.secondary-modules h2 {
+/* parent of a, img, .module-text; child of .secondary-module*/
+.module {
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 40px;
+}
+/* names of the websites */
+.module h2 {
     font-size: 75px;
     flex: 0 0 75px;
     font-style: oblique;
     margin: 25px;
 }
+/* description of websites */
+.module-text {
+    width: 800px;
+    flex: 1 1 300px;
+    display: inline-block;
+    margin: 10px;
+    font-size: 30px;
+    line-height: 0.8;
+    text-align:justify;
+}
+/* work website links/ hover animation */
+a img {
+    flex-grow: 0;
+    flex-shrink: 0;
+    height: 300px;
+    width: 500px;
+    display: inline-block;
+    border-radius: 30px;
+}
+.secondary-modules a img:hover {
+    transform:rotateY(180deg);
+}
+/* contact page icons only */
 .icons {
     display: flex;
     align-items: center;
@@ -135,55 +168,12 @@ a {
     width: 300px;
 }
 
-.module {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    margin-bottom: 40px;
-}
-.module h2 {
-    line-height: .7;
-}
-a img {
-    flex-grow: 0;
-    flex-shrink: 0;
-    height: 300px;
-    width: 500px;
-    display: inline-block;
-}
-.secondary-modules a img:hover {
-    transform:rotateX(180deg);
-}
-
-.module-text {
-    flex: 0 0 400px;
-    display: inline-block;
-    margin: 10px;
-}
-.module-text p {
-    font-size: 30px;
-    line-height: 0.8;
-    text-align:justify;
-    padding: 0 40px 0 0;
-}
-
-
-
-
 /* media queries for smaller screens */
-@media screen and (max-width: 980px) {
-
-    .head-img{
-        width: 100%;
-        text-align: center;
-    }
-    .nav-parent{
-        width: 100%;
-    }
-    .intro {
-        display:none;
+@media screen and (max-width: 1470px) {
+    /* adjusting modules on 'about' and 'work' pages into columns */
+    .secondary-modules {
+        align-items: center;
+        flex-direction: column;
     }
     .module{
         display: flex;
@@ -191,6 +181,10 @@ a img {
         justify-content: center;
         align-items: center;
     }
+    .secondary-header{
+        justify-content: center;
+    }
+    /* styling 'work' 'about' page's column */
     .secondary-modules h2{
         width: 100%;
         text-align: center;
@@ -199,10 +193,7 @@ a img {
     .module img {
         margin: 25px auto;
         width: 100%;
-        text-align: center;
-    }
-    .module img:hover{
-        opacity: 50%;
+        align-self: center;
     }
     #selfie{
         width: 60%;
@@ -212,11 +203,10 @@ a img {
         text-align:center;
         font-family: Georgia, 'Times New Roman', Times, serif;
         line-height: 1;
-        justify-self: center;
-        margin: 20px auto;
-        padding-bottom: 25px;
+        margin: auto auto;
         border-bottom: 3px solid var(--neutral);
     }
+    /* styling icons on 'contact page */ 
     .icons {
         flex-direction: column;
         justify-content: center;
@@ -228,11 +218,20 @@ a img {
 }
 
 @media screen and (max-width: 768px) {
-    .secondary-modules img {
-        width: 60%;
+    /* centering homepage 'Ely Daley' graphic */
+        .head-img{
+            width: 100%;
+            text-align: center;
+        }
+    /* remove intro from homepage, was too awkward */
+    .intro {
+        display:none;
     }
+
 }
 @media screen and (max-width: 575px) {
+    /* re-arrange homepage as nav links lost integrity as a row
+        but did not look great above 'ED' graphic */
     .front-page{
         display: flex;
         flex-direction:column-reverse;
@@ -240,14 +239,9 @@ a img {
         justify-content: center;
         width:fit-content;
     }
-    .head-img{
-        margin: 0;
-    }
+    /* needs margins removed to stay centered */
     .nav-parent{
         flex-direction: column;
         margin: 0;
-    }
-    .nav-pages{
-        width:max-content;
     }
 }
