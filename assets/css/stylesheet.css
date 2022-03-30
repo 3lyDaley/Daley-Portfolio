@@ -61,7 +61,7 @@ header img {
     flex-wrap: wrap;
     display: inline-block;
     font-size: 30px;
-    line-height: 0.7;
+    line-height: 1;
     text-align:justify;
     padding: 0 40px 0 0;
 }
