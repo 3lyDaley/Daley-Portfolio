@@ -40,7 +40,7 @@ List the ready features here:
 ## Screenshots
 - Mobile layout 
 <br/>
-<p align="center">
+
 ![Home Page Mobile](./assets/Screenshots/mobile-homePage.png)
 
 ![About Page mobile](./assets/Screenshots/mobile-about-1.png) 
