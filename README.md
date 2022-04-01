@@ -1,7 +1,7 @@
 # Daley-Portfolio
-Ely daley website
-# Horiseon Accessibility Project
+Ely daley's Portfolio 1.0
 
+# Ely Portfolio live
 > Live demo [_here_](https://3lydaley.github.io/Daley-Portfolio/). <!-- Project link here. -->
 
 ## Table of Contents
@@ -39,15 +39,25 @@ List the ready features here:
 
 ## Screenshots
 - Mobile layout 
+<br/>
+<p align="center">
 ![Home Page Mobile](./assets/Screenshots/mobile-homePage.png)
-![About Page mobile](./assets/Screenshots/mobile-about-1.png)
+
+![About Page mobile](./assets/Screenshots/mobile-about-1.png) 
+
+<br/>
+
 ![About Page mobile c.](./assets/Screenshots/mobile-about-2.png)
+
 ![Work Page mobile](./assets/Screenshots/mobile-work-1.png)
+<br/>
+
 ![Work Page mobile c.](./assets/Screenshots/mobile-work-2.png)
 
 ![Contact Page](./assets/Screenshots/mobile-contact.png)
->
 
+<br/>
+</p>
 
 ## Project Status
 Project is: _in progress_ 
@@ -66,8 +76,3 @@ for mobile finessing.
 Created by [@3lydaley](https://github.com/3lyDaley) - feel free to contact me!
 
 
-<!-- Optional -->
-<!-- ## License -->
-<!-- This project is open source and available under the [... License](). -->
-
-<!-- You don't have to include all sections - just the one's relevant to your project -->
