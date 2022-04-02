@@ -11,8 +11,9 @@ Ely daley's Portfolio 1.0
 * [Screenshots](#screenshots)
 * [Project Status](#project-status)
 * [Room for Improvement](#room-for-improvement)
+* [Acknowledgements](#acknowledgements)
 * [Contact](#contact)
-<!-- * [License](#license) -->
+
 
 
 ## General Information
@@ -66,6 +67,12 @@ Room for improvement:
 - Make the "Work" page a simple text list that anchors project pages to increase negative space and further allow for mobile finessing. 
 - Possible reformatting, starting from a 575px viewport and working up from there.
 
+## Acknowledgements
+
+I found a lot of inspiration looking through lists of "best portfolios", here are a few that inspired me most:
+- [Diana Tatarenco](https://www.dianarenko.com/)
+- [Dalya Green](https://www.dalyagreen.com/)
+- [Salmi Zulaikha Salim](https://www.zulaikhasalim.com/)
 
 ## Contact
 Created by [@3lydaley](https://github.com/3lyDaley) - feel free to contact me!
