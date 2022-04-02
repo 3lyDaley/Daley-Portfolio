@@ -61,11 +61,12 @@ Project is: _in progress_
 ## Room for Improvement
 
 Room for improvement:
-- Improving the layout of the "work" page, possibly full re-design to improve mobile functionality.
-- The site could use some more user interactivity, one idea is to animate scrolling text on the about me page. 
-- Possibly giving each "Work" project its own page. 
-- Make the "Work" page a simple text list that anchors project pages to increase negative space and further allow for mobile finessing. 
-- Possible reformatting, starting from a 575px viewport and working up from there.
+- Increasing negative space by converting to a scroll-down format rather than different pages.
+- Increased user interactivity by adding backround and scroll animations.
+- Add more buttons for pop-up information.
+- Exploring more text options
+- Animating images to hide/reveal.
+- Website is in need of a footer.
 
 ## Acknowledgements
 
