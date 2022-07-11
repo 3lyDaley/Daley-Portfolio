@@ -11,8 +11,9 @@ Ely daley's Portfolio 1.0
 * [Screenshots](#screenshots)
 * [Project Status](#project-status)
 * [Room for Improvement](#room-for-improvement)
+* [Acknowledgements](#acknowledgements)
 * [Contact](#contact)
-<!-- * [License](#license) -->
+
 
 
 ## General Information
@@ -38,25 +39,21 @@ List the ready features here:
 
 
 ## Screenshots
-- Mobile layout 
-<br/>
-![Home Page Mobile](./assets/Screenshots/mobile-homePage.png | width=)
 
-![About Page mobile](./assets/Screenshots/mobile-about-1.png) 
-
+<h3 align="center">Mobile Layouts</h3>
 <br/>
 
-![About Page mobile c.](./assets/Screenshots/mobile-about-2.png)
+<p align="center">
+  <img src="./assets/Screenshots/mobile-homePage.png" width="300")/>
+  <img src="./assets/Screenshots/mobile-contact.png" width="300")/>
+  <br/>
+  <img src="./assets/Screenshots/mobile-about-1.png" width="300")/>
+  <img src="./assets/Screenshots/mobile-about-2.png" width="300")/>
+  <br/>
+  <img src="./assets/Screenshots/mobile-work-1.png" width="300")/>
+  <img src="./assets/Screenshots/mobile-work-2.png" width="300")/>
+  </p>
 
-![Work Page mobile](./assets/Screenshots/mobile-work-1.png)
-<br/>
-
-![Work Page mobile c.](./assets/Screenshots/mobile-work-2.png)
-
-![Contact Page](./assets/Screenshots/mobile-contact.png)
-
-<br/>
-</p>
 
 ## Project Status
 Project is: _in progress_ 
@@ -64,12 +61,19 @@ Project is: _in progress_
 ## Room for Improvement
 
 Room for improvement:
-- Improving the layout of the "work" page, possibly full re-design to improve mobile functionality.
-- The site could use some more user interactivity, my ideas 
-are to animate the scrolling text on the about me page, possibly giving each project its own page and making the workpage a list to increase negative space and further allow
-for mobile finessing. 
-- Possible reformatting, starting from a 575px viewport and working up from there.
+- Increasing negative space by converting to a scroll-down format rather than different pages.
+- Increased user interactivity by adding backround and scroll animations.
+- Add more buttons for pop-up information.
+- Exploring more text options
+- Animating images to hide/reveal.
+- Website is in need of a footer.
 
+## Acknowledgements
+
+I found a lot of inspiration looking through lists of "best portfolios", here are a few that inspired me most:
+- [Diana Tatarenco](https://www.dianarenko.com/)
+- [Dalya Green](https://www.dalyagreen.com/)
+- [Salmi Zulaikha Salim](https://www.zulaikhasalim.com/)
 
 ## Contact
 Created by [@3lydaley](https://github.com/3lyDaley) - feel free to contact me!
